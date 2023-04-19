@@ -12,3 +12,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.sabermais{
+  color: #835B31;
+  text-decoration: revert;
+  font-weight: bold;
+}
+
+.sabermais:hover{
+  color: #462400;
+}
+
+.contactar{
+  color: black;
+  font-weight: 700;
+  border-radius: initial;
+  background-color: #EFE8DA;
+  border: none;
+  padding: 6px;
+  padding-inline: 20px;
+}
+
+.contactar:hover{
+  color: black;
+  background-color: #E2D5BB;
+}
