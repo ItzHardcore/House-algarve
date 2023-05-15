@@ -8,6 +8,7 @@ import {
   MDBCardText,
   MDBCardFooter,
 } from "mdb-react-ui-kit";
+import { Link } from "react-router-dom";
 
 function ImageCard(props) {
   return (
@@ -18,13 +19,13 @@ function ImageCard(props) {
         className="img-fluid"
         aspectRatio="16:9"
       />
-      <MDBCardBody className="text-start">
+      <MDBCardBody className="text-start pt-4 px-0">
         <MDBCardTitle className="fw-bold">{props.name}</MDBCardTitle>
         <MDBCardText>{props.description}</MDBCardText>
         <MDBCardText>{props.value} € por noite</MDBCardText>
-        <a className="sabermais" href="#">
+        <Link className="sabermais" to={props.to}>
           Saber mais
-        </a>
+        </Link>
       </MDBCardBody>
       <MDBCardFooter>
         <button className="contactar">

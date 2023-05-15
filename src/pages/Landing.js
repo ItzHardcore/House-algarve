@@ -29,6 +29,7 @@ function Landing() {
               name="Praia da Luz, Algarve"
               value="200"
               description="Casa com piscina, T3"
+              to="/praialuz"
             />
           </MDBCol>
           <MDBCol size="md pb-5">
@@ -37,6 +38,7 @@ function Landing() {
               name="Praia Verde, Algarve"
               value="350"
               description="Casa com piscina, T5"
+              to="/praialuz"
             />
           </MDBCol>
         </MDBRow>

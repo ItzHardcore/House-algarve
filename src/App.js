@@ -3,6 +3,7 @@ import Landing from "./pages/Landing";
 import Contacts from "./pages/Contacts";
 import Error from "./pages/Error";
 import Algarve from "./pages/Algarve";
+import PraiaLuz from "./pages/Praialuz";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
           <Route index element={<Landing />} />
           <Route path="contacts" element={<Contacts />} />
           <Route path="algarve" element={<Algarve />} />
+          <Route path="praialuz" element={<PraiaLuz />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>
