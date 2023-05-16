@@ -2,12 +2,13 @@ import React, { useState, useCallback, useEffect } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import axios from "axios";
-import { MDBCol, MDBRow } from "mdb-react-ui-kit";
+import { MDBCol, MDBRow, MDBSpinner } from "mdb-react-ui-kit";
 
 function HousePhotos(props) {
   const [photos, setPhotos] = useState([]);
   const [currentImage, setCurrentImage] = useState(0);
   const [viewerIsOpen, setViewerIsOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const openLightbox = useCallback((event, { photo, index }) => {
     setCurrentImage(index);
@@ -26,8 +27,10 @@ function HousePhotos(props) {
 
   const fetchPhotosFromFolder = async (folderId) => {
     try {
+      setLoading(true);
       const photosArray = await getPhotosArrayFromFolder(folderId);
       setPhotos(photosArray);
+      setLoading(false);
     } catch (error) {
       console.error("Error fetching photos:", error);
     }
@@ -54,23 +57,33 @@ function HousePhotos(props) {
 
   return (
     <div>
-      <div className="gallery">
-        <Gallery className="" photos={displayedPhotos} onClick={openLightbox} />
-      </div>
-
-      <ModalGateway>
-        {viewerIsOpen ? (
-          <Modal onClose={closeLightbox}>
-            <Carousel
-              currentIndex={currentImage}
-              views={photos.map((x) => ({
-                ...x,
-                srcset: x.srcSet,
-              }))}
+      {loading ? (
+        <MDBSpinner className="text-primary" />
+      ) : (
+        <div>
+          <div className="gallery">
+            <Gallery
+              className=""
+              photos={displayedPhotos}
+              onClick={openLightbox}
             />
-          </Modal>
-        ) : null}
-      </ModalGateway>
+          </div>
+
+          <ModalGateway>
+            {viewerIsOpen ? (
+              <Modal onClose={closeLightbox}>
+                <Carousel
+                  currentIndex={currentImage}
+                  views={photos.map((x) => ({
+                    ...x,
+                    srcset: x.srcSet,
+                  }))}
+                />
+              </Modal>
+            ) : null}
+          </ModalGateway>
+        </div>
+      )}
     </div>
   );
 }

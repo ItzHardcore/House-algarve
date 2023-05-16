@@ -75,7 +75,10 @@ function PraiaLuz() {
                 <h6>10 hóspedes | 2 suítes | 3 quartos | 3 casas de banho</h6>
               </MDBCol>
               <MDBCol size="md-12 col-lg-6">
-                <p style={{ float: "right" }} className="contactar2 mr-1 ">
+                <p
+                  style={{ float: "right" }}
+                  className="contactar2 mr-1 pe-none"
+                >
                   € {price} / noite
                 </p>
               </MDBCol>

@@ -67,7 +67,7 @@ function PraiaVerde() {
               Praia Verde, Algarve
             </h5>
 
-            <HousePhotos folderId="1uTQkpg2sJoFT5NCy6b5oIZkwVqiwcKNn"></HousePhotos>
+            <HousePhotos folderId="a"></HousePhotos>
 
             <MDBRow className="border border-2 border-white">
               <MDBCol size="md-12 col-lg-6">
@@ -75,7 +75,10 @@ function PraiaVerde() {
                 <h6>10 hóspedes | 2 suítes | 3 quartos | 3 casas de banho</h6>
               </MDBCol>
               <MDBCol size="md-12 col-lg-6">
-                <p style={{ float: "right" }} className="contactar2 mr-1 ">
+                <p
+                  style={{ float: "right" }}
+                  className="contactar2 mr-1 pe-none"
+                >
                   € {price} / noite
                 </p>
               </MDBCol>
