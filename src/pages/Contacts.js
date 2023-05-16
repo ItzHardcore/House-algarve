@@ -6,11 +6,16 @@ import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import Houseshow from "../components/Houseshow";
 import Titulo_fundo from "../components/Titulo_fundo";
 
+//icons
+import { IoMdCall } from "react-icons/io";
+import { HiOutlineMail } from "react-icons/hi";
+import ContactForm from "../components/ContactForm";
+
 function Contacts() {
   return (
     <div>
       <Navbar />
-      <Titulo_fundo texto="fale connosco!" imagem={fundo} />
+      <Titulo_fundo texto="Descubra o algarve" imagem={fundo} />
       <MDBContainer
         style={{
           position: "relative",
@@ -18,27 +23,30 @@ function Contacts() {
           backgroundColor: "white",
         }}
       >
-        <p className="pt-4 text-center text-black-50">Reserve já</p>
+        <p className="py-4 text-center text-black-50">Reserve já</p>
 
-        <MDBRow className="text-center">
-          <MDBCol size="md">
-            <Houseshow />
-          </MDBCol>
-          <MDBCol size="md">
-            <Houseshow />
-          </MDBCol>
-        </MDBRow>
-        <p>ate</p>
-        <p>ate</p>
-        <p>ate</p>
-        <p>ate</p>
-        <p>ate</p>
-        <p>ate</p>
+        <div className="text-black mx-lg-5 px-lg-5">
+          <p className="fw-bold">
+            Quer saber mais sobre os apartamentos ou sobre o Algarve? Entre em
+            contacto!
+          </p>
+          <p>
+            <a href="tel:+35191532797" className="algarvelinks py-3">
+              <IoMdCall className="fs-1 me-1" style={{ color: "#835b31" }} />
+              +351 935 912 124
+            </a>
+          </p>
 
-        <p>ate</p>
+          <a href="mailto: abc@example.com" className="algarvelinks">
+            <HiOutlineMail className="fs-1 me-1" style={{ color: "#835b31" }} />
+            xxxxxxxxx@gmail.com
+          </a>
 
-        <p>ate</p>
-        <p>ate</p>
+          <h6 className="text-start text-black fw-bold pb-3 pt-5 mt-5">
+            ENTRE EM CONTACTO
+          </h6>
+          <ContactForm></ContactForm>
+        </div>
       </MDBContainer>
       <Footer />
     </div>

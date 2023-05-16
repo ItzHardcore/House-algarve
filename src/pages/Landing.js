@@ -8,7 +8,7 @@ import Titulo_fundo from "../components/Titulo_fundo";
 
 function Landing() {
   return (
-    <div>
+    <div className="w-auto">
       <Navbar />
       <Titulo_fundo texto="bem-vindo ao algarve" imagem={fundo} />
       <MDBContainer
@@ -27,7 +27,6 @@ function Landing() {
             <ImageCard
               src="https://villa-algarve.info/wp-content/uploads/2021/02/1.jpg"
               name="Praia da Luz, Algarve"
-              value="200"
               description="Casa com piscina, T3"
               to="/praialuz"
             />
@@ -36,9 +35,8 @@ function Landing() {
             <ImageCard
               src="https://villa-algarve.info/wp-content/uploads/2021/02/1.jpg"
               name="Praia Verde, Algarve"
-              value="350"
               description="Casa com piscina, T5"
-              to="/praialuz"
+              to="/praiaverde"
             />
           </MDBCol>
         </MDBRow>

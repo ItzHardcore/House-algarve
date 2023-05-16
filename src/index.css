@@ -1,3 +1,7 @@
+html,body{
+  overflow-x: hidden;
+}
+
 body {
   background-color: rgb(239,232,218);
   margin: 0;
@@ -36,4 +40,34 @@ code {
 .contactar:hover{
   color: black;
   background-color: #E2D5BB;
+}
+
+.contactar2{
+  color: white;
+  font-weight: 700;
+  border-radius: initial;
+  background-color: #855f37;
+  border: none;
+  padding: 6px;
+  padding-inline: 20px;
+}
+
+.contactar2:hover{
+  color: rgb(255, 255, 255);
+  background-color: #533616;
+}
+
+.gallery img:hover {
+    opacity: 0.8;
+  }
+
+.algarvelinks{
+  color: black;
+  font-weight: bold;
+}
+
+.algarvelinks:hover{
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
 }

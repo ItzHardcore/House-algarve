@@ -17,7 +17,7 @@ import { BiRestaurant } from "react-icons/bi";
 import { FaUmbrellaBeach } from "react-icons/fa";
 import { MdFamilyRestroom } from "react-icons/md";
 
-function PraiaLuz() {
+function PraiaVerde() {
   const [price, setPrice] = useState(500);
 
   async function getDocumentContent(fileId) {
@@ -67,7 +67,7 @@ function PraiaLuz() {
               Praia Verde, Algarve
             </h5>
 
-            <HousePhotos folderId="1_aHX97oTn1VzCG0zAtl009tLszhDdHRR"></HousePhotos>
+            <HousePhotos folderId="1uTQkpg2sJoFT5NCy6b5oIZkwVqiwcKNn"></HousePhotos>
 
             <MDBRow className="border border-2 border-white">
               <MDBCol size="md-12 col-lg-6">
@@ -142,4 +142,4 @@ function PraiaLuz() {
     </div>
   );
 }
-export default PraiaLuz;
+export default PraiaVerde;

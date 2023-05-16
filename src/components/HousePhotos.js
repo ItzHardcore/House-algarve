@@ -2,6 +2,7 @@ import React, { useState, useCallback, useEffect } from "react";
 import Gallery from "react-photo-gallery";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import axios from "axios";
+import { MDBCol, MDBRow } from "mdb-react-ui-kit";
 
 function HousePhotos(props) {
   const [photos, setPhotos] = useState([]);
@@ -52,11 +53,11 @@ function HousePhotos(props) {
   const displayedPhotos = photos.slice(0, 5);
 
   return (
-    <div className="text-black pb-5 ">
-      <h5>{props.name}</h5>
-      <div>
+    <div>
+      <div className="gallery">
         <Gallery className="" photos={displayedPhotos} onClick={openLightbox} />
       </div>
+
       <ModalGateway>
         {viewerIsOpen ? (
           <Modal onClose={closeLightbox}>
@@ -70,11 +71,6 @@ function HousePhotos(props) {
           </Modal>
         ) : null}
       </ModalGateway>
-      <h5>Casa com piscina, T5</h5>
-      <h6>10 hóspedes | 2 suítes | 3 quartos | 3 casas de banho</h6>
-      <button style={{ float: "right" }} className="contactar">
-        € 350 / noite
-      </button>
     </div>
   );
 }

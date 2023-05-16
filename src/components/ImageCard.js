@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 
 function ImageCard(props) {
   return (
-    <MDBCard className="text-black mx-5">
+    <MDBCard className="text-black mx-5 shadow-0">
       <MDBCardImage
         src={props.src}
         alt={props.name}
@@ -22,16 +22,16 @@ function ImageCard(props) {
       <MDBCardBody className="text-start pt-4 px-0">
         <MDBCardTitle className="fw-bold">{props.name}</MDBCardTitle>
         <MDBCardText>{props.description}</MDBCardText>
-        <MDBCardText>{props.value} € por noite</MDBCardText>
+        {props.value && <MDBCardText>{props.value} € por noite</MDBCardText>}
         <Link className="sabermais" to={props.to}>
           Saber mais
         </Link>
       </MDBCardBody>
-      <MDBCardFooter>
-        <button className="contactar">
+      <MDBCardFooter className="bg-white border-0">
+        <a href="tel:+35191532797" className="contactar px-4 py-2">
           <i className="fas fa-phone pe-2"></i>
           Contactar
-        </button>
+        </a>
       </MDBCardFooter>
     </MDBCard>
   );

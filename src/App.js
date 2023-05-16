@@ -4,6 +4,8 @@ import Contacts from "./pages/Contacts";
 import Error from "./pages/Error";
 import Algarve from "./pages/Algarve";
 import PraiaLuz from "./pages/Praialuz";
+import { MDBContainer } from "mdb-react-ui-kit";
+import PraiaVerde from "./pages/Praiaverde";
 
 function App() {
   return (
@@ -14,6 +16,7 @@ function App() {
           <Route path="contacts" element={<Contacts />} />
           <Route path="algarve" element={<Algarve />} />
           <Route path="praialuz" element={<PraiaLuz />} />
+          <Route path="praiaverde" element={<PraiaVerde />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </BrowserRouter>

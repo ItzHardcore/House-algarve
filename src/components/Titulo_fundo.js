@@ -6,7 +6,7 @@ function Titulo_fundo(props) {
         <div className="d-flex justify-content-center align-items-center h-100">
           <h1
             style={{ letterSpacing: "20px" }}
-            className="fs-1 text-uppercase text-white"
+            className="d-none d-md-inline fs-md-1 text-uppercase text-white px-5"
           >
             {props.texto}
           </h1>
