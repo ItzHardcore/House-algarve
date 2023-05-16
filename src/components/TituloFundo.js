@@ -1,4 +1,4 @@
-function Titulo_fundo(props) {
+function TituloFundo(props) {
   return (
     <div className="bg-image">
       <img src={props.imagem} className="h-10 " alt="Algarve" />
@@ -15,4 +15,4 @@ function Titulo_fundo(props) {
     </div>
   );
 }
-export default Titulo_fundo;
+export default TituloFundo;

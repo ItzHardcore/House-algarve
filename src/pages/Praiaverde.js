@@ -5,7 +5,7 @@ import fundo from "../assets/images/algarve.jpg";
 import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import SyncCalendar from "../components/SyncCalendar";
 import HousePhotos from "../components/HousePhotos";
-import Titulo_fundo from "../components/Titulo_fundo";
+import TituloFundo from "../components/TituloFundo";
 import axios from "axios";
 
 //icons
@@ -50,7 +50,7 @@ function PraiaVerde() {
   return (
     <div>
       <Navbar />
-      <Titulo_fundo texto="Conheça a nossa casa" imagem={fundo} />
+      <TituloFundo texto="Conheça a nossa casa" imagem={fundo} />
       <MDBContainer
         style={{
           position: "relative",
@@ -131,6 +131,7 @@ function PraiaVerde() {
           <div className="text-start pb-5">
             <p>Rua de Real Village, Praia Verder, Algarve</p>
             <iframe
+              title="Mapa"
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50861.04805936538!2d-7.516499269375853!3d37.18085529706109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1018e218ae96c9%3A0x4f98434ba9fbf7b9!2sPraia%20Verde!5e0!3m2!1spt-PT!2spt!4v1684181941922!5m2!1spt-PT!2spt"
               allowfullscreen=""
               width="100%"

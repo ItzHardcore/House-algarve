@@ -2,9 +2,8 @@ import React from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import fundo from "../assets/images/algarve.jpg";
-import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
-import Houseshow from "../components/Houseshow";
-import Titulo_fundo from "../components/Titulo_fundo";
+import { MDBContainer } from "mdb-react-ui-kit";
+import TituloFundo from "../components/TituloFundo";
 
 //icons
 import { IoMdCall } from "react-icons/io";
@@ -15,7 +14,7 @@ function Contacts() {
   return (
     <div>
       <Navbar />
-      <Titulo_fundo texto="Descubra o algarve" imagem={fundo} />
+      <TituloFundo texto="Descubra o algarve" imagem={fundo} />
       <MDBContainer
         style={{
           position: "relative",

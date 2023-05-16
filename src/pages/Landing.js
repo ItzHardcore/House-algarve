@@ -4,13 +4,13 @@ import Footer from "../components/Footer";
 import fundo from "../assets/images/algarve.jpg";
 import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
 import ImageCard from "../components/ImageCard";
-import Titulo_fundo from "../components/Titulo_fundo";
+import TituloFundo from "../components/TituloFundo";
 
 function Landing() {
   return (
     <div className="w-auto">
       <Navbar />
-      <Titulo_fundo texto="bem-vindo ao algarve" imagem={fundo} />
+      <TituloFundo texto="bem-vindo ao algarve" imagem={fundo} />
       <MDBContainer
         style={{
           position: "relative",

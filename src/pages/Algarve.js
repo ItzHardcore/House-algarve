@@ -3,15 +3,14 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import fundo from "../assets/images/algarve.jpg";
 import { MDBCol, MDBContainer, MDBRow } from "mdb-react-ui-kit";
-import Houseshow from "../components/Houseshow";
-import Titulo_fundo from "../components/Titulo_fundo";
+import TituloFundo from "../components/TituloFundo";
 import photo from "../assets/images/praia-algarve-1-1-scaled.jpg";
 
 function Algarve() {
   return (
     <div>
       <Navbar />
-      <Titulo_fundo texto="Descubra o algarve" imagem={fundo} />
+      <TituloFundo texto="Descubra o algarve" imagem={fundo} />
       <MDBContainer
         style={{
           position: "relative",
@@ -42,7 +41,7 @@ function Algarve() {
             região tem para oferecer e prepare-se para uma viagem de férias que
             nunca esquecerá!
           </p>
-          <img className="w-100" src={photo}></img>
+          <img className="w-100" src={photo} alt=""></img>
 
           <MDBRow className="text-center pt-5 pb-2">
             <h6 className="text-black fw-bold pb-3">
@@ -52,11 +51,13 @@ function Algarve() {
               <img
                 className="w-100 my-3"
                 src="https://www.vortexmag.net/wp-content/uploads/2022/07/36107276664_3d69e72a63_h-min.jpg"
+                alt=""
               ></img>
               <a
                 className="algarvelinks"
                 href="https://www.visitalgarve.pt/pt/travelplanner.aspx"
                 target="_blank"
+                rel="noreferrer"
               >
                 Algarve Travel Planner
               </a>
@@ -69,11 +70,13 @@ function Algarve() {
               <img
                 className="w-100 my-3"
                 src="https://www.vortexmag.net/wp-content/uploads/2022/07/36107276664_3d69e72a63_h-min.jpg"
+                alt=""
               ></img>
               <a
                 className="algarvelinks"
                 href="https://eventos.visitalgarve.pt/pt/"
                 target="_blank"
+                rel="noreferrer"
               >
                 Algarve Eventos
               </a>
@@ -86,11 +89,13 @@ function Algarve() {
               <img
                 className="w-100 my-3"
                 src="https://www.vortexmag.net/wp-content/uploads/2022/07/36107276664_3d69e72a63_h-min.jpg"
+                alt=""
               ></img>
               <a
                 className="algarvelinks"
                 href="https://www.visitalgarve.pt/externalPages/mapa/default.aspx"
                 target="_blank"
+                rel="noreferrer"
               >
                 Mapa Interativo
               </a>
@@ -103,11 +108,13 @@ function Algarve() {
               <img
                 className="w-100 my-3"
                 src="https://www.vortexmag.net/wp-content/uploads/2022/07/36107276664_3d69e72a63_h-min.jpg"
+                alt=""
               ></img>
               <a
                 className="algarvelinks"
                 href="https://www.visitalgarve.pt/pt/online-store.aspx"
                 target="_blank"
+                rel="noreferrer"
               >
                 Catálogo online
               </a>
