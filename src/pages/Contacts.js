@@ -36,9 +36,9 @@ function Contacts() {
             </a>
           </p>
 
-          <a href="mailto: abc@example.com" className="algarvelinks">
+          <a href="mailto: jrdrviegas@gmail.com" className="algarvelinks">
             <HiOutlineMail className="fs-1 me-1" style={{ color: "#835b31" }} />
-            xxxxxxxxx@gmail.com
+            jrdrviegas@gmail.com
           </a>
 
           <h6 className="text-start text-black fw-bold pb-3 pt-5 mt-5">

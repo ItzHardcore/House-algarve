@@ -17,7 +17,7 @@ import { BiRestaurant } from "react-icons/bi";
 import { FaUmbrellaBeach } from "react-icons/fa";
 import { MdFamilyRestroom } from "react-icons/md";
 
-function PraiaVerde() {
+function SiroccoHouse() {
   const [price, setPrice] = useState(500);
 
   async function getDocumentContent(fileId) {
@@ -63,9 +63,7 @@ function PraiaVerde() {
         </p>
         <div className="mx-lg-5 px-lg-5 ">
           <div className="text-black pb-3">
-            <h5 className="border border-2 border-white">
-              Praia Verde, Algarve
-            </h5>
+            <h5 className="border border-2 border-white">Sirocco Pool House</h5>
 
             <HousePhotos folderId="a"></HousePhotos>
 
@@ -119,13 +117,13 @@ function PraiaVerde() {
               </MDBRow>
             </MDBCol>
             <MDBCol size="md-12" className="text-center col-lg-6 py-md-3">
-              <div className="d-flex justify-content-center">
+              <div className="d-flex justify-content-center mb-3">
                 <SyncCalendar />
               </div>
-              <button className="contactar2 mt-3">
+              <a href="tel:+351939708151" className="contactar2">
                 <i className="fas fa-phone pe-2"></i>
                 Contactar
-              </button>
+              </a>
             </MDBCol>
           </MDBRow>
           <div className="text-start pb-5">
@@ -146,4 +144,4 @@ function PraiaVerde() {
     </div>
   );
 }
-export default PraiaVerde;
+export default SiroccoHouse;

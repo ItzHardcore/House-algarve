@@ -28,7 +28,7 @@ function ImageCard(props) {
         </Link>
       </MDBCardBody>
       <MDBCardFooter className="bg-white border-0">
-        <a href="tel:+35191532797" className="contactar px-4 py-2">
+        <a href="tel:939708151" className="contactar px-4 py-2">
           <i className="fas fa-phone pe-2"></i>
           Contactar
         </a>

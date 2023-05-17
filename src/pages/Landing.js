@@ -26,17 +26,17 @@ function Landing() {
           <MDBCol size="md pb-5">
             <ImageCard
               src="https://villa-algarve.info/wp-content/uploads/2021/02/1.jpg"
-              name="Praia da Luz, Algarve"
+              name="Cozy Pool House "
               description="Casa com piscina, T3"
-              to="/praialuz"
+              to="/cozyhouse"
             />
           </MDBCol>
           <MDBCol size="md pb-5">
             <ImageCard
               src="https://villa-algarve.info/wp-content/uploads/2021/02/1.jpg"
-              name="Praia Verde, Algarve"
+              name="Sirocco Pool House"
               description="Casa com piscina, T5"
-              to="/praiaverde"
+              to="/siroccohouse"
             />
           </MDBCol>
         </MDBRow>
