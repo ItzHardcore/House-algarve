@@ -18,7 +18,7 @@ import { FaUmbrellaBeach } from "react-icons/fa";
 import { MdFamilyRestroom } from "react-icons/md";
 
 function SiroccoHouse() {
-  const [price, setPrice] = useState(500);
+  const [price, setPrice] = useState(200);
 
   async function getDocumentContent(fileId) {
     try {
@@ -45,7 +45,7 @@ function SiroccoHouse() {
   }
 
   // Call the getDocumentContent function with the file ID of your document
-  getDocumentContent("1yjj0M-AC0pfZIW1sL-qe3lXPPAsfc1OaU5hgGD8moK0");
+  getDocumentContent("1-wYvbxvhx8mCLuABdUfUXQQlaOL8ox0J5HnNeFZ643I");
 
   return (
     <div>
@@ -65,7 +65,7 @@ function SiroccoHouse() {
           <div className="text-black pb-3">
             <h5 className="border border-2 border-white">Sirocco Pool House</h5>
 
-            <HousePhotos folderId="a"></HousePhotos>
+            <HousePhotos folderId="1i1wgqIUqeLUvdoidXuF58CpoA_LFoKFD"></HousePhotos>
 
             <MDBRow className="border border-2 border-white">
               <MDBCol size="md-12 col-lg-6">
@@ -130,7 +130,7 @@ function SiroccoHouse() {
             <p>Rua de Real Village, Praia Verder, Algarve</p>
             <iframe
               title="Mapa"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50861.04805936538!2d-7.516499269375853!3d37.18085529706109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1018e218ae96c9%3A0x4f98434ba9fbf7b9!2sPraia%20Verde!5e0!3m2!1spt-PT!2spt!4v1684181941922!5m2!1spt-PT!2spt"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1591.1536896355387!2d-8.47226312916151!3d37.09779999747755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzfCsDA1JzUyLjEiTiA4wrAyOCcxNy40Ilc!5e0!3m2!1spt-PT!2spt!4v1685094288640!5m2!1spt-PT!2spt"
               allowfullscreen=""
               width="100%"
               height="450"

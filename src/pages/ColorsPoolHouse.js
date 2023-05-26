@@ -17,7 +17,7 @@ import { BiRestaurant } from "react-icons/bi";
 import { FaUmbrellaBeach } from "react-icons/fa";
 import { MdFamilyRestroom } from "react-icons/md";
 
-function CozyHouse() {
+function ColorsPoolHousee() {
   const [price, setPrice] = useState(200);
 
   async function getDocumentContent(fileId) {
@@ -45,7 +45,7 @@ function CozyHouse() {
   }
 
   // Call the getDocumentContent function with the file ID of your document
-  getDocumentContent("1-wYvbxvhx8mCLuABdUfUXQQlaOL8ox0J5HnNeFZ643I");
+  getDocumentContent("1nZc5AXe9oGeohwgWBFLM_RR6KLqCzleYYAKYS52deDk");
 
   return (
     <div>
@@ -63,9 +63,9 @@ function CozyHouse() {
         </p>
         <div className="mx-lg-5 px-lg-5 ">
           <div className="text-black pb-3">
-            <h5 className="border border-2 border-white">Cozy Pool House</h5>
+            <h5 className="border border-2 border-white">Sirocco Pool House</h5>
 
-            <HousePhotos folderId="1i1wgqIUqeLUvdoidXuF58CpoA_LFoKFD"></HousePhotos>
+            <HousePhotos folderId="1B8pR2IlnJv35SPoM7u_3mQR_gVYpNV3K"></HousePhotos>
 
             <MDBRow className="border border-2 border-white">
               <MDBCol size="md-12 col-lg-6">
@@ -137,7 +137,6 @@ function CozyHouse() {
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            
           </div>
         </div>
       </MDBContainer>
@@ -145,4 +144,4 @@ function CozyHouse() {
     </div>
   );
 }
-export default CozyHouse;
+export default ColorsPoolHousee;

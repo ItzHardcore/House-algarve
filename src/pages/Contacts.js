@@ -14,7 +14,7 @@ function Contacts() {
   return (
     <div>
       <Navbar />
-      <TituloFundo texto="Descubra o algarve" imagem={fundo} />
+      <TituloFundo texto="Contacte" imagem={fundo} />
       <MDBContainer
         style={{
           position: "relative",
@@ -24,7 +24,7 @@ function Contacts() {
       >
         <p className="py-4 text-center text-black-50">Reserve já</p>
 
-        <div className="text-black mx-lg-5 px-lg-5">
+        <div className="text-black mx-lg-5 px-lg-5 pb-5">
           <p className="fw-bold">
             Quer saber mais sobre os apartamentos ou sobre o Algarve? Entre em
             contacto!
@@ -41,10 +41,10 @@ function Contacts() {
             jrdrviegas@gmail.com
           </a>
 
-          <h6 className="text-start text-black fw-bold pb-3 pt-5 mt-5">
+          {/* <h6 className="text-start text-black fw-bold pb-3 pt-5 mt-5">
             ENTRE EM CONTACTO
-          </h6>
-          <ContactForm></ContactForm>
+          </h6> */}
+          {/* <ContactForm></ContactForm> */}
         </div>
       </MDBContainer>
       <Footer />
